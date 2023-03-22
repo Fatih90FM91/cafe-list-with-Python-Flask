@@ -1,0 +1,107 @@
+
+
+
+
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Coffee and Wifi{% endblock %}
+
+{% block styling %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='css/styles.css')}}">
+{% endblock %}
+
+
+{% block content %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+      <th scope="col">Handle</th>
+      <th scope="col">Cars</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+       <td>@mdo</td>
+       <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jacob</td>
+      <td>Thornton larry fran debur</td>
+      <td>@fat</td>
+      <td>Thornton larry fran debur</td>
+      <td>@fat</td>
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+      <td>Jacob anderson </td>
+      <td>Thornton larry fran debur</td>
+      <td>@fat abdvcfc</td>
+       <td>Thornton larry fran debur</td>
+      <td>@fat</td>
+    </tr>
+     <tr>
+      <th scope="row">5</th>
+      <td>Jacob anderson </td>
+      <td>Thornton larry fran debur</td>
+      <td>@fat abdvcfc</td>
+         <td>Thornton larry fran debur</td>
+      <td>@fat</td>
+    </tr>
+     <tr>
+      <th scope="row">6</th>
+      <td>Jacob anderson </td>
+      <td>Thornton larry fran debur</td>
+      <td>@fat abdvcfc</td>
+         <td>Thornton larry fran debur</td>
+      <td>@fat</td>
+    </tr>
+
+  </tbody>
+</table>
+
+{% endblock %}
+
+
+
+
+<!--               <table class="table">-->
+
+<!--                              <tbody>-->
+<!--                                <tr>-->
+
+<!--                                  <th scope="col">{{list_size[0]}}</th>-->
+
+<!--                                    {% if 'https' in list_size[1][1] %}-->
+<!--                                  <th scope="col" class="location"> <a href={{list_size[1]}}>Map Link</a></th>-->
+<!--                                    {%else%}-->
+<!--                                  <th scope="col" class="location"> {{list_size[1]}}</th>-->
+<!--                                    {%endif%}-->
+<!--                                  <th scope="col">{{list_size[2]}}</th>-->
+<!--                                  <th scope="col">{{list_size[3]}}</th>-->
+<!--                                  <th scope="col">{{list_size[4]}}</th>-->
+<!--                                  <th scope="col">{{list_size[5]}}</th>-->
+<!--                                  <th scope="col">{{list_size[6]}}</th>-->
+<!--                                  <th scope="col">{{list_size[7]}}</th>-->
+<!--                                </tr>-->
+<!--                              </tbody>-->
+<!--                            </table>-->
+
+
