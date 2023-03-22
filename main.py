@@ -6,9 +6,6 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, URL, Length
 import csv
 
-# app = Flask(__name__)
-# app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-# Bootstrap(app)
 
 
 def create_app():
@@ -34,16 +31,9 @@ class CafeForm(FlaskForm):
 
     submit = SubmitField(label='submit')
 
-# Exercise:
-# add: Location URL, open time, closing time, coffee rating, wifi rating, power outlet rating fields
-# make coffee/wifi/power a select element with choice of 0 to 5.
-#e.g. You could use emojis ☕️/💪/✘/🔌
-# make all fields required except submit
-# use a validator to check that the URL field has a URL entered.
-# ---------------------------------------------------------------------------
 
 
-# all Flask routes below
+
 @app.route("/")
 def home():
     return render_template("index.html")
